@@ -23,26 +23,22 @@ module.exports = {
       provider: () => new HDWalletProvider(process.env.MNEMONIC, "https://ropsten.infura.io/v3/" + process.env.INFURA_API_KEY),
       network_id: 3,
       gas: 3000000,
-      gasPrice: 21
     },
     kovan: {
       provider: () => new HDWalletProvider(process.env.MNEMONIC, "https://kovan.infura.io/v3/" + process.env.INFURA_API_KEY),
       network_id: 42,
       gas: 3000000,
-      gasPrice: 21
     },
     rinkeby: {
       provider: () => new HDWalletProvider(process.env.MNEMONIC, "https://rinkeby.infura.io/v3/" + process.env.INFURA_API_KEY),
       network_id: 4,
       gas: 3000000,
-      gasPrice: 30
     },
     // main ethereum network(mainnet)
     main: {
       provider: () => new HDWalletProvider(process.env.MNEMONIC, "https://mainnet.infura.io/v3/" + process.env.INFURA_API_KEY),
       network_id: 1,
       gas: 3000000,
-      gasPrice: 21
     }
   }
 };
