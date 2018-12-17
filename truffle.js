@@ -34,7 +34,7 @@ module.exports = {
     rinkeby: {
       provider: () => new HDWalletProvider(process.env.MNEMONIC, "https://rinkeby.infura.io/v3/" + process.env.INFURA_API_KEY),
       network_id: 4,
-      gas: 4000000,
+      gas: 3000000,
       gasPrice: 30
     },
     // main ethereum network(mainnet)
